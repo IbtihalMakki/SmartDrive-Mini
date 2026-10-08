@@ -1,0 +1,10 @@
+^D:\GITHUB\SMARTDRIVE-MINI\CPP\BUILD\CMAKEFILES\0FCE8953CBAE7B719BD967A73BFD65B1\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/GITHUB/SmartDrive-Mini/cpp -BD:/GITHUB/SmartDrive-Mini/cpp/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/GITHUB/SmartDrive-Mini/cpp/build/smartdrive_rgbd_geometry.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

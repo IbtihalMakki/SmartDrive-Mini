@@ -30,3 +30,5 @@ Thumbs.db
 
 # CARLA generated files
 recording.log
+
+cpp/build/cpp/build/

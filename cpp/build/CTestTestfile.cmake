@@ -1,0 +1,36 @@
+# CMake generated Testfile for 
+# Source directory: D:/GITHUB/SmartDrive-Mini/cpp
+# Build directory: D:/GITHUB/SmartDrive-Mini/cpp/build
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+if(CTEST_CONFIGURATION_TYPE MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+  add_test(rgbd_geometry_unit "D:/GITHUB/SmartDrive-Mini/cpp/build/Debug/test_rgbd_geometry.exe")
+  set_tests_properties(rgbd_geometry_unit PROPERTIES  _BACKTRACE_TRIPLES "D:/GITHUB/SmartDrive-Mini/cpp/CMakeLists.txt;13;add_test;D:/GITHUB/SmartDrive-Mini/cpp/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+  add_test(rgbd_geometry_unit "D:/GITHUB/SmartDrive-Mini/cpp/build/Release/test_rgbd_geometry.exe")
+  set_tests_properties(rgbd_geometry_unit PROPERTIES  _BACKTRACE_TRIPLES "D:/GITHUB/SmartDrive-Mini/cpp/CMakeLists.txt;13;add_test;D:/GITHUB/SmartDrive-Mini/cpp/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+  add_test(rgbd_geometry_unit "D:/GITHUB/SmartDrive-Mini/cpp/build/MinSizeRel/test_rgbd_geometry.exe")
+  set_tests_properties(rgbd_geometry_unit PROPERTIES  _BACKTRACE_TRIPLES "D:/GITHUB/SmartDrive-Mini/cpp/CMakeLists.txt;13;add_test;D:/GITHUB/SmartDrive-Mini/cpp/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+  add_test(rgbd_geometry_unit "D:/GITHUB/SmartDrive-Mini/cpp/build/RelWithDebInfo/test_rgbd_geometry.exe")
+  set_tests_properties(rgbd_geometry_unit PROPERTIES  _BACKTRACE_TRIPLES "D:/GITHUB/SmartDrive-Mini/cpp/CMakeLists.txt;13;add_test;D:/GITHUB/SmartDrive-Mini/cpp/CMakeLists.txt;0;")
+else()
+  add_test(rgbd_geometry_unit NOT_AVAILABLE)
+endif()
+if(CTEST_CONFIGURATION_TYPE MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+  add_test(python_cpp_parity "C:/Users/ibtih/AppData/Local/Programs/Python/Python310/python.exe" "D:/GITHUB/SmartDrive-Mini/cpp/tests/test_python_parity.py" "D:/GITHUB/SmartDrive-Mini/cpp/build/Debug/rgbd_geometry_cli.exe")
+  set_tests_properties(python_cpp_parity PROPERTIES  _BACKTRACE_TRIPLES "D:/GITHUB/SmartDrive-Mini/cpp/CMakeLists.txt;16;add_test;D:/GITHUB/SmartDrive-Mini/cpp/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+  add_test(python_cpp_parity "C:/Users/ibtih/AppData/Local/Programs/Python/Python310/python.exe" "D:/GITHUB/SmartDrive-Mini/cpp/tests/test_python_parity.py" "D:/GITHUB/SmartDrive-Mini/cpp/build/Release/rgbd_geometry_cli.exe")
+  set_tests_properties(python_cpp_parity PROPERTIES  _BACKTRACE_TRIPLES "D:/GITHUB/SmartDrive-Mini/cpp/CMakeLists.txt;16;add_test;D:/GITHUB/SmartDrive-Mini/cpp/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+  add_test(python_cpp_parity "C:/Users/ibtih/AppData/Local/Programs/Python/Python310/python.exe" "D:/GITHUB/SmartDrive-Mini/cpp/tests/test_python_parity.py" "D:/GITHUB/SmartDrive-Mini/cpp/build/MinSizeRel/rgbd_geometry_cli.exe")
+  set_tests_properties(python_cpp_parity PROPERTIES  _BACKTRACE_TRIPLES "D:/GITHUB/SmartDrive-Mini/cpp/CMakeLists.txt;16;add_test;D:/GITHUB/SmartDrive-Mini/cpp/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+  add_test(python_cpp_parity "C:/Users/ibtih/AppData/Local/Programs/Python/Python310/python.exe" "D:/GITHUB/SmartDrive-Mini/cpp/tests/test_python_parity.py" "D:/GITHUB/SmartDrive-Mini/cpp/build/RelWithDebInfo/rgbd_geometry_cli.exe")
+  set_tests_properties(python_cpp_parity PROPERTIES  _BACKTRACE_TRIPLES "D:/GITHUB/SmartDrive-Mini/cpp/CMakeLists.txt;16;add_test;D:/GITHUB/SmartDrive-Mini/cpp/CMakeLists.txt;0;")
+else()
+  add_test(python_cpp_parity NOT_AVAILABLE)
+endif()
