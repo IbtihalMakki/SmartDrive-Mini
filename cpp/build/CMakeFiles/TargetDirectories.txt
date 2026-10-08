@@ -1,6 +1,0 @@
-D:/GITHUB/SmartDrive-Mini/cpp/build/CMakeFiles/rgbd_geometry.dir
-D:/GITHUB/SmartDrive-Mini/cpp/build/CMakeFiles/test_rgbd_geometry.dir
-D:/GITHUB/SmartDrive-Mini/cpp/build/CMakeFiles/rgbd_geometry_cli.dir
-D:/GITHUB/SmartDrive-Mini/cpp/build/CMakeFiles/RUN_TESTS.dir
-D:/GITHUB/SmartDrive-Mini/cpp/build/CMakeFiles/ALL_BUILD.dir
-D:/GITHUB/SmartDrive-Mini/cpp/build/CMakeFiles/ZERO_CHECK.dir

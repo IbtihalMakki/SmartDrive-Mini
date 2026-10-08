@@ -15,3 +15,6 @@ find_package(Python3 COMPONENTS Interpreter QUIET)
 if(Python3_Interpreter_FOUND)
     add_test(NAME python_cpp_parity COMMAND ${Python3_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_python_parity.py $<TARGET_FILE:rgbd_geometry_cli>)
 endif()
+
+add_executable(geometry_benchmark src/geometry_benchmark.cpp)
+target_link_libraries(geometry_benchmark PRIVATE rgbd_geometry)

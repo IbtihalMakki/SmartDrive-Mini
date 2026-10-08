@@ -1,0 +1,54 @@
+{
+  "benchmark": "SmartDrive RGB-D visible-surface localization",
+  "image_size": [
+    640,
+    480
+  ],
+  "bbox": [
+    200,
+    120,
+    440,
+    360
+  ],
+  "cpp": {
+    "language": "cpp17",
+    "iterations": 2000,
+    "warmup": 200,
+    "mean_ms": 0.27106915,
+    "p95_ms": 0.3112,
+    "throughput_ops_s": 3689.09556841861,
+    "position": [
+      0,
+      0,
+      8.5
+    ],
+    "sample_count": 13553
+  },
+  "python": {
+    "language": "python_numpy",
+    "iterations": 2000,
+    "warmup": 200,
+    "mean_ms": 0.6904993999633007,
+    "p95_ms": 0.8513099983247229,
+    "throughput_ops_s": 1448.227181737086,
+    "position": [
+      0.0,
+      0.0,
+      8.5
+    ],
+    "sample_count": 13553
+  },
+  "comparison": {
+    "cpp_speedup_vs_python": 2.5473182764003233,
+    "position_error_m": 0.0,
+    "sample_counts_match": true,
+    "numerical_parity": true
+  },
+  "limitations": [
+    "Synthetic deterministic depth input",
+    "Single bounding box",
+    "Single-process C++ timing excludes process startup",
+    "Python timing includes Python and NumPy function overhead",
+    "No CARLA runtime or full-pipeline FPS measured"
+  ]
+}
