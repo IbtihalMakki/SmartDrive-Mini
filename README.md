@@ -162,3 +162,73 @@ python -m evaluation.trajectory results/trajectory_observations.jsonl --output r
 
 No measured trajectory numbers have been claimed yet. Do not begin Phase 4 until
 the actual user-run evaluation artifacts have been checked.
+
+
+## C++17 RGB-D Localization Optimization
+
+SmartDrive-Mini includes a native C++17 implementation of RGB-D
+visible-surface localization, alongside the Python/NumPy reference
+implementation.
+
+### Optimization Techniques
+
+- Replaced full sorting with `std::nth_element` for median selection.
+- Preallocated coordinate vectors using `std::vector::reserve()`.
+- Reduced repeated camera-intrinsics validation inside pixel loops.
+- Precomputed reciprocal focal lengths.
+- Reduced repeated calculations during 3D back-projection.
+
+### Performance Benchmark
+
+The benchmark uses a deterministic synthetic depth image
+(640 × 480), a single bounding box, 2,000 measured iterations,
+and 200 warmup iterations.
+
+| Metric | Python / NumPy | Optimized C++17 |
+|---|---:|---:|
+| Mean Latency | 0.6905 ms | 0.2711 ms |
+| P95 Latency | 0.8513 ms | 0.3112 ms |
+| Throughput | 1,448.23 ops/s | 3,689.10 ops/s |
+| Relative Speedup | 1.00x | 2.55x |
+
+**Numerical parity:** PASSED
+
+**Position error:** 0.0000000000 m
+
+### Verification
+
+- C++ geometry unit tests: PASSED
+- Python/C++ parity tests: PASSED
+- CTest: 2/2 tests passed
+
+### Reproduce the Benchmark
+
+Build the project in Release mode:
+
+```cmd
+cmake --build cpp\build --config Release
+```
+
+Run the tests:
+
+```cmd
+ctest --test-dir cpp\build -C Release --output-on-failure
+```
+
+Run the performance comparison:
+
+```cmd
+python cpp\benchmarks\compare_performance.py cpp\build\Release\geometry_benchmark.exe
+```
+
+Results are saved to:
+
+`results/rgbd_cpp_python_performance.json`
+
+### Benchmark Scope
+
+This is a microbenchmark of the RGB-D localization algorithm,
+not a measurement of full CARLA simulation performance.
+
+The benchmark excludes Python-to-C++ integration overhead,
+camera acquisition, object detection, tracking, and vehicle control.
