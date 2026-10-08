@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "test_mode": "TRAFFIC_LIGHT_TEST",
+  "state": "GREEN",
+  "semantic_actor_verified": true,
+  "detected": true,
+  "reported_state": "GREEN",
+  "traffic_risk": "LOW",
+  "traffic_action": "CONTINUE",
+  "final_risk": "LOW",
+  "final_action": "CONTINUE",
+  "decision_source": "OBJECTS",
+  "agent_state": "DRIVING",
+  "agent_action": "CONTINUE",
+  "control": {
+    "throttle": 0.3499999940395355,
+    "brake": 0.0,
+    "steer": -0.0004339961742516607
+  },
+  "distance_m": 29.139345169067383,
+  "validation": "CARLA semantic traffic-light state; not visual color classification"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "EVALUATED",
+  "units": "pixels",
+  "horizon": "5 processed observations; variable elapsed time",
+  "eligible_windows": 353,
+  "recorded_frames": 200,
+  "ground_truth": "future tracked image centers, not actor world coordinates",
+  "models": {
+    "constant_position": {
+      "mean_ade_px": 3.124221011266638,
+      "mean_fde_px": 5.051879338110386,
+      "p95_ade_px": 33.99640233983347,
+      "p95_fde_px": 52.71721922265928
+    },
+    "current_predictor": {
+      "mean_ade_px": 1.6655945429135317,
+      "mean_fde_px": 2.9850580782547183,
+      "p95_ade_px": 9.835503074020767,
+      "p95_fde_px": 22.950239996849493
+    }
+  }
+}

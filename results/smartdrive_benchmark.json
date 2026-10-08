@@ -1,0 +1,1075 @@
+{
+  "benchmark": "SmartDrive-Mini End-to-End Validation Summary",
+  "evidence_policy": "Only machine-readable files present in results/ are counted as completed benchmark evidence. No missing result is inferred.",
+  "completed_tests": 9,
+  "total_tests": 9,
+  "completion_ratio": 1.0,
+  "tests": {
+    "metric_3d_localization": {
+      "status": "PASS",
+      "mode": "RGBD_3D_LOCALIZATION_TEST",
+      "reference": "SEMANTIC_LIDAR_CAMERA_SURFACE",
+      "coordinate_convention": "X right, Y down, Z forward; meters",
+      "required_consecutive_frames": 10,
+      "position_tolerance_m": 0.75,
+      "pass_samples": 10,
+      "mean_position_error_m": 0.04470082383851818,
+      "min_position_error_m": 0.018032021834266602,
+      "max_position_error_m": 0.07169602547179942,
+      "final_position_error_m": 0.026191841471810667,
+      "source_file": "phase1_localization_verified.json"
+    },
+    "global_route_navigation": {
+      "status": "PASS",
+      "route_length_m": 480.69749284163026,
+      "waypoint_count": 237,
+      "waypoints_reached": 237,
+      "route_progress": 1.0,
+      "destination_radius_m": 3.0,
+      "final_destination_distance_m": 0.8660852313041687,
+      "destination_index": 20,
+      "source_file": "route_navigation_report.json"
+    },
+    "trajectory_prediction": {
+      "status": "EVALUATED",
+      "units": "pixels",
+      "horizon": "5 processed observations; variable elapsed time",
+      "eligible_windows": 353,
+      "recorded_frames": 200,
+      "ground_truth": "future tracked image centers, not actor world coordinates",
+      "baseline": {
+        "mean_ade_px": 3.124221011266638,
+        "mean_fde_px": 5.051879338110386,
+        "p95_ade_px": 33.99640233983347,
+        "p95_fde_px": 52.71721922265928
+      },
+      "current_predictor": {
+        "mean_ade_px": 1.6655945429135317,
+        "mean_fde_px": 2.9850580782547183,
+        "p95_ade_px": 9.835503074020767,
+        "p95_fde_px": 22.950239996849493
+      },
+      "improvement_percent": {
+        "mean_ADE": 46.68768512512316,
+        "mean_FDE": 40.91192844342053,
+        "p95_ADE": 71.06898848971281,
+        "p95_FDE": 56.465382022682896
+      },
+      "source_file": "trajectory_prediction_summary.json"
+    },
+    "rgbd_distance": {
+      "status": "PASS",
+      "test_mode": "RGBD_DISTANCE_TEST",
+      "reference": "SEMANTIC_LIDAR_CAMERA_SURFACE",
+      "coordinate_convention": "X right, Y down, Z forward; meters",
+      "axis_tolerance_m": null,
+      "position_tolerance_m": null,
+      "tolerance": "max(0.5 m, 5% of reference)",
+      "required_consecutive_frames": 10,
+      "results": [
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430053
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430054
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430055
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430056
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430057
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430058
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430059
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430060
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430061
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430062
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430063
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430064
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430065
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430066
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430067
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430068
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430069
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430070
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430071
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430072
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430073
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430074
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430075
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430076
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430077
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430078
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430079
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430080
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430081
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430082
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430083
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430084
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430085
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430086
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430087
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430088
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430089
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430090
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430091
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430092
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430093
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430094
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430095
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430096
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430097
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430098
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430099
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430100
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430101
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430102
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430103
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430104
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430105
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430106
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430107
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430108
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430109
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430110
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430111
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430112
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430113
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430114
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430115
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430116
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430117
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430118
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430119
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430120
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430121
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430122
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430123
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430124
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430125
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430126
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430127
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430128
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430129
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430130
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430131
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430132
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430133
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430134
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430135
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430136
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430137
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430138
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430139
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430140
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430141
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430142
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430143
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430144
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430145
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430146
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430147
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430148
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430149
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430150
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430151
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430152
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430153
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430154
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430155
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430156
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430157
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430158
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430159
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430160
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430161
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430162
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430163
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430164
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430165
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430166
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430167
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430168
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430169
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430170
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430171
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430172
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430173
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430174
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430175
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430176
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430177
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430178
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430179
+        },
+        {
+          "status": "WAIT",
+          "association": "UNVERIFIED",
+          "reason": "NO_UNIQUE_NPC_DETECTION",
+          "frame": 430180
+        },
+        {
+          "status": "PASS",
+          "association": "PASS",
+          "reason": "SURFACE_COMPARISON",
+          "track_id": 2,
+          "npc_id": 55,
+          "reference_m": 15.308085441589355,
+          "samples": 20,
+          "frame": 430181,
+          "depth_m": 15.34,
+          "error_m": 0.03191455841064439,
+          "tolerance_m": 0.7654042720794678
+        },
+        {
+          "status": "PASS",
+          "association": "PASS",
+          "reason": "SURFACE_COMPARISON",
+          "track_id": 2,
+          "npc_id": 55,
+          "reference_m": 15.215751647949219,
+          "samples": 20,
+          "frame": 430182,
+          "depth_m": 15.24,
+          "error_m": 0.024248352050781463,
+          "tolerance_m": 0.760787582397461
+        },
+        {
+          "status": "PASS",
+          "association": "PASS",
+          "reason": "SURFACE_COMPARISON",
+          "track_id": 2,
+          "npc_id": 55,
+          "reference_m": 15.122943878173828,
+          "samples": 20,
+          "frame": 430183,
+          "depth_m": 15.15,
+          "error_m": 0.02705612182617223,
+          "tolerance_m": 0.7561471939086915
+        },
+        {
+          "status": "PASS",
+          "association": "PASS",
+          "reason": "SURFACE_COMPARISON",
+          "track_id": 2,
+          "npc_id": 55,
+          "reference_m": 15.030805587768555,
+          "samples": 20,
+          "frame": 430184,
+          "depth_m": 15.06,
+          "error_m": 0.02919441223144581,
+          "tolerance_m": 0.7515402793884278
+        },
+        {
+          "status": "PASS",
+          "association": "PASS",
+          "reason": "SURFACE_COMPARISON",
+          "track_id": 2,
+          "npc_id": 55,
+          "reference_m": 14.938188552856445,
+          "samples": 20,
+          "frame": 430185,
+          "depth_m": 14.96,
+          "error_m": 0.02181144714355554,
+          "tolerance_m": 0.7469094276428223
+        },
+        {
+          "status": "PASS",
+          "association": "PASS",
+          "reason": "SURFACE_COMPARISON",
+          "track_id": 2,
+          "npc_id": 55,
+          "reference_m": 14.846263885498047,
+          "samples": 20,
+          "frame": 430186,
+          "depth_m": 14.87,
+          "error_m": 0.023736114501952343,
+          "tolerance_m": 0.7423131942749024
+        },
+        {
+          "status": "PASS",
+          "association": "PASS",
+          "reason": "SURFACE_COMPARISON",
+          "track_id": 2,
+          "npc_id": 55,
+          "reference_m": 14.753851890563965,
+          "samples": 20,
+          "frame": 430187,
+          "depth_m": 14.78,
+          "error_m": 0.026148109436034517,
+          "tolerance_m": 0.7376925945281982
+        },
+        {
+          "status": "PASS",
+          "association": "PASS",
+          "reason": "SURFACE_COMPARISON",
+          "track_id": 2,
+          "npc_id": 55,
+          "reference_m": 14.662128448486328,
+          "samples": 20,
+          "frame": 430188,
+          "depth_m": 14.68,
+          "error_m": 0.01787155151367159,
+          "tolerance_m": 0.7331064224243165
+        },
+        {
+          "status": "PASS",
+          "association": "PASS",
+          "reason": "SURFACE_COMPARISON",
+          "track_id": 2,
+          "npc_id": 55,
+          "reference_m": 14.569950103759766,
+          "samples": 20,
+          "frame": 430189,
+          "depth_m": 14.6,
+          "error_m": 0.03004989624023402,
+          "tolerance_m": 0.7284975051879883
+        },
+        {
+          "status": "PASS",
+          "association": "PASS",
+          "reason": "SURFACE_COMPARISON",
+          "track_id": 2,
+          "npc_id": 55,
+          "reference_m": 14.478452682495117,
+          "samples": 20,
+          "frame": 430190,
+          "depth_m": 14.5,
+          "error_m": 0.021547317504882812,
+          "tolerance_m": 0.7239226341247559
+        }
+      ],
+      "source_file": "rgbd_distance_result.json"
+    },
+    "traffic_light_red": {
+      "status": "PASS",
+      "test_mode": "TRAFFIC_LIGHT_TEST",
+      "state": "RED",
+      "semantic_actor_verified": true,
+      "detected": true,
+      "reported_state": "RED",
+      "traffic_risk": "HIGH",
+      "traffic_action": "STOP",
+      "final_risk": "HIGH",
+      "final_action": "STOP",
+      "decision_source": "TRAFFIC_LIGHT",
+      "agent_state": "STOPPED",
+      "agent_action": "STOP",
+      "control": {
+        "throttle": 0.0,
+        "brake": 1.0,
+        "steer": -0.0006580156623385847
+      },
+      "distance_m": 30.827314376831055,
+      "validation": "CARLA semantic traffic-light state; not visual color classification",
+      "source_file": "traffic_light_red_result.json"
+    },
+    "traffic_light_yellow": {
+      "status": "PASS",
+      "test_mode": "TRAFFIC_LIGHT_TEST",
+      "state": "YELLOW",
+      "semantic_actor_verified": true,
+      "detected": true,
+      "reported_state": "YELLOW",
+      "traffic_risk": "MEDIUM",
+      "traffic_action": "SLOW_DOWN",
+      "final_risk": "MEDIUM",
+      "final_action": "SLOW_DOWN",
+      "decision_source": "TRAFFIC_LIGHT",
+      "agent_state": "STOPPED",
+      "agent_action": "WAIT",
+      "control": {
+        "throttle": 0.0,
+        "brake": 1.0,
+        "steer": -0.0004665736050810665
+      },
+      "distance_m": 29.47658348083496,
+      "validation": "CARLA semantic traffic-light state; not visual color classification",
+      "source_file": "traffic_light_yellow_result.json"
+    },
+    "traffic_light_green": {
+      "status": "PASS",
+      "test_mode": "TRAFFIC_LIGHT_TEST",
+      "state": "GREEN",
+      "semantic_actor_verified": true,
+      "detected": true,
+      "reported_state": "GREEN",
+      "traffic_risk": "LOW",
+      "traffic_action": "CONTINUE",
+      "final_risk": "LOW",
+      "final_action": "CONTINUE",
+      "decision_source": "OBJECTS",
+      "agent_state": "DRIVING",
+      "agent_action": "CONTINUE",
+      "control": {
+        "throttle": 0.3499999940395355,
+        "brake": 0.0,
+        "steer": -0.0004339961742516607
+      },
+      "distance_m": 29.139345169067383,
+      "validation": "CARLA semantic traffic-light state; not visual color classification",
+      "source_file": "traffic_light_green_result.json"
+    },
+    "perception_dropout": {
+      "status": "PASS",
+      "test_mode": "PERCEPTION_DROPOUT",
+      "dropout_duration_seconds": 1.5,
+      "hazard_latch_verified": true,
+      "safety_override_verified": true,
+      "high_stop_maintained": true,
+      "perception_restored": true,
+      "controlled_npc_cleared": true,
+      "controlled_npc_clear_method": "DESTROY_ACTOR_AFTER_RESTORE",
+      "safety_latch_released": true,
+      "validation_scope": "Temporal perception-dropout safety / hazard persistence after a real HIGH/STOP latch",
+      "source_file": "perception_dropout_result.json"
+    },
+    "autonomous_recovery": {
+      "status": "PASS",
+      "test_mode": "NPC_RECOVERY",
+      "stop_verified": true,
+      "npc_cleared": true,
+      "npc_clear_method": "DESTROY_ACTOR",
+      "safety_supervisor_reset": false,
+      "required_sustained_driving_seconds": 3.0,
+      "sustained_driving_seconds": 3.1409999999996217,
+      "minimum_recovery_speed_kmh": 0.5,
+      "ego_speed_kmh_at_pass": 17.1712807191229,
+      "throttle_at_pass": 0.3499999940395355,
+      "brake_at_pass": 0.0,
+      "agent_state_at_pass": "DRIVING",
+      "agent_action_at_pass": "CONTINUE",
+      "final_risk_at_pass": "LOW",
+      "final_action_at_pass": "CONTINUE",
+      "validation_scope": "Controlled obstacle stop, obstacle clearance, and sustained autonomous recovery",
+      "source_file": "autonomous_recovery_result.json"
+    }
+  }
+}

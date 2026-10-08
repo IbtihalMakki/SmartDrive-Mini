@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "test_mode": "TRAFFIC_LIGHT_TEST",
+  "state": "RED",
+  "semantic_actor_verified": true,
+  "detected": true,
+  "reported_state": "RED",
+  "traffic_risk": "HIGH",
+  "traffic_action": "STOP",
+  "final_risk": "HIGH",
+  "final_action": "STOP",
+  "decision_source": "TRAFFIC_LIGHT",
+  "agent_state": "STOPPED",
+  "agent_action": "STOP",
+  "control": {
+    "throttle": 0.0,
+    "brake": 1.0,
+    "steer": -0.0006580156623385847
+  },
+  "distance_m": 30.827314376831055,
+  "validation": "CARLA semantic traffic-light state; not visual color classification"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "test_mode": "PERCEPTION_DROPOUT",
+  "dropout_duration_seconds": 1.5,
+  "hazard_latch_verified": true,
+  "safety_override_verified": true,
+  "high_stop_maintained": true,
+  "perception_restored": true,
+  "controlled_npc_cleared": true,
+  "controlled_npc_clear_method": "DESTROY_ACTOR_AFTER_RESTORE",
+  "safety_latch_released": true,
+  "validation_scope": "Temporal perception-dropout safety / hazard persistence after a real HIGH/STOP latch"
+}

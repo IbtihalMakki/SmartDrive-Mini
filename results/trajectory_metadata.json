@@ -1,0 +1,9 @@
+{
+  "map": "Carla/Maps/Town10HD_Opt",
+  "start_index": 0,
+  "predictor": "image-space mean velocity with static gating and direction correction",
+  "history_size": 5,
+  "prediction_steps": 5,
+  "scenario": "stationary NPC ahead; ego follows lane",
+  "target_frames": 200
+}

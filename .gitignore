@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Environment / secrets
+.env
+.env.*
+
+# ML model weights / engines
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Runtime / cache
+*.log
+.cache/
+
+# CARLA generated files
+recording.log

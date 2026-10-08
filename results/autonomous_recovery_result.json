@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "test_mode": "NPC_RECOVERY",
+  "stop_verified": true,
+  "npc_cleared": true,
+  "npc_clear_method": "DESTROY_ACTOR",
+  "safety_supervisor_reset": false,
+  "required_sustained_driving_seconds": 3.0,
+  "sustained_driving_seconds": 3.1409999999996217,
+  "minimum_recovery_speed_kmh": 0.5,
+  "ego_speed_kmh_at_pass": 17.1712807191229,
+  "throttle_at_pass": 0.3499999940395355,
+  "brake_at_pass": 0.0,
+  "agent_state_at_pass": "DRIVING",
+  "agent_action_at_pass": "CONTINUE",
+  "final_risk_at_pass": "LOW",
+  "final_action_at_pass": "CONTINUE",
+  "validation_scope": "Controlled obstacle stop, obstacle clearance, and sustained autonomous recovery"
+}
